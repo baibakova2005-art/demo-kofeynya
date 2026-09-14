@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/* Тёмная тема «обжарка»: фон не чёрный, а тёплый тёмно-коричневый; верхние слои светлее. */
+@theme {
+  --font-sans: "Manrope Variable", system-ui, sans-serif;
+  --font-display: "Bitter Variable", Georgia, serif;
+
+  --color-bg: #17110d;
+  --color-surface: #211812;
+  --color-soft: #2e231b;
+  --color-ink: #f3e9df;
+  --color-muted: #c2b2a3;
+  --color-line: #3a2d23;
+  --color-line-strong: #5e4b3c;
+  --color-accent: #e0a45e;
+  --color-accent-hover: #ebb776;
+  --color-accent-text: #e8b06c;
+  --color-on-accent: #1a120c;
+  --color-cream: #f3e9df;
+}
+
+:root {
+  --radius-btn: 10px;
+  --radius-field: 10px;
+  --radius-card: 18px;
+  --shadow-btn: 0 10px 24px -12px rgba(224, 164, 94, 0.55);
+  --shadow-card: 0 20px 40px -24px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid #e0a45e;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
