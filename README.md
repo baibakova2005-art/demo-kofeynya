@@ -4,6 +4,10 @@
 
 **Живая версия:** https://baibakova2005-art.github.io/demo-kofeynya/
 
+![Первый экран](screenshots/oblozhka.jpg)
+
+Полные снимки страницы: [компьютер](screenshots/kompyuter.jpg) · [телефон 360 px](screenshots/telefon.jpg)
+
 Кофе из зерна, которое мы обжариваем сами. Меню с ценами, завтраки весь день до 16:00 и заказ с собой без очереди.
 
 ## Стек
